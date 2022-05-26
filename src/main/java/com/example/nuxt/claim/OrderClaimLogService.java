@@ -1,9 +1,12 @@
 package com.example.nuxt.claim;
 
+import org.springframework.stereotype.Component;
+
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
+@Component
 public class OrderClaimLogService {
 
     public String insertMntr() {

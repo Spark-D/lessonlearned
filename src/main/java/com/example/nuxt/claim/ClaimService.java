@@ -1,10 +1,13 @@
 package com.example.nuxt.claim;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ClaimService {
-    OrderClaimLogService orderClaimCommService = new OrderClaimLogService();
+    @Autowired
+    OrderClaimLogService orderClaimCommService;
 
     public void claimProcess(String message) {
 
